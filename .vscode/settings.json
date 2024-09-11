@@ -1,0 +1,11 @@
+{
+    "configurations": [
+      {
+        "name": "Vulfus",
+        "intelliSenseMode": "clang-x64", // Change from "gcc-x64" to "clang-x64"
+        "compilerPath": "/usr/bin/clang++", // Path to Clang compiler (adjust based on your installation)
+        "compileCommands": "${workspaceFolder}/build/compile_commands.json" // Path to your compile_commands.json
+      }
+    ]
+  }
+  

@@ -1,2 +1,3 @@
-# just one folder and that is the build folder for all the .lib .obj .exe .etc
+# these are the useless folders that git doesnt need
+./.cache/*
 ./build/*

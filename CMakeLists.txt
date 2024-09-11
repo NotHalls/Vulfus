@@ -1,8 +1,12 @@
 cmake_minimum_required(VERSION 3.10)
 
 
+# variables
+set(ProjectName Vulfus)
+
+
 # creating the project
-project(Vulfus)
+project(${ProjectName})
 
 # setting the output directories
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin/${CMAKE_SYSTEM_NAME}-${CMAKE_BUILD_TYPE}")
@@ -15,7 +19,11 @@ set(CXX_STANDARD_REQUIRED ON)
 
 # this setting exports json file that helps the code editor's intellisence
 # basicly it will give the intellisence the sence to work corrently
-set(EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+
+# Finding vulkan
+find_package(Vulkan REQUIRED)
 
 
 # some crossplatform stuff to make decisions based on what os we are using
@@ -44,5 +52,24 @@ file(GLOB_RECURSE MAIN_SOURCES "./src/*.cpp" "./src/*.hpp")
 file(GLOB_RECURSE GLM_SOURCES "./submodules/glm/glm/*.hpp")
 
 
-# creating the exe
-add_executable(Vulfus ${MAIN_SOURCES} ${GLM_SOURCES})
+# adding the include directories
+include_directories(
+    src
+    submodules/glfw/include
+    submodules/glm/glm
+    submodules/imgui
+)
+
+
+# CREATING APPLICATION #
+add_executable(${ProjectName} ${MAIN_SOURCES} ${GLM_SOURCES})
+
+
+# adding libraries
+# linking the vulkan library
+target_include_directories(${ProjectName} PRIVATE ${Vulkan_INCLUDE_DIR})
+target_link_libraries(${ProjectName} PRIVATE ${Vulkan_LIBRARIES} glfw)
+
+
+# adding compile definitions
+target_compile_definitions(${ProjectName} PUBLIC GLFW_INCLUDE_VULKAN)

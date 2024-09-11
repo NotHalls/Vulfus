@@ -1,0 +1,134 @@
+[
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -DGLFW_INCLUDE_VULKAN -DVF_WINDOWS -IZ:/Projects/CPP/Vulfus/src -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glm/glm -IZ:/Projects/CPP/Vulfus/submodules/imgui -IC:/VulkanSDK/1.3.290.0/Include -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\Vulfus.dir\\src\\main.cpp.obj -c Z:\\Projects\\CPP\\Vulfus\\src\\main.cpp",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\src\\main.cpp",
+  "output": "CMakeFiles\\Vulfus.dir\\src\\main.cpp.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\context.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\context.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\context.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\context.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\init.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\init.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\init.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\init.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\input.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\input.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\input.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\input.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\monitor.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\monitor.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\platform.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\platform.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\platform.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\platform.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\vulkan.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\vulkan.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\window.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\window.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\window.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\window.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\egl_context.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\egl_context.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\osmesa_context.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\osmesa_context.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_init.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_init.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_init.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_init.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_monitor.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_monitor.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_monitor.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_monitor.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_window.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_window.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_window.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_window.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_joystick.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_joystick.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\null_joystick.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\null_joystick.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_module.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_module.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_module.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_module.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_time.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_time.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_thread.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_thread.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_init.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_init.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_joystick.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_joystick.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_monitor.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_monitor.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_window.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\win32_window.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj"
+},
+{
+  "directory": "Z:/Projects/CPP/Vulfus/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -DUNICODE -DVF_WINDOWS -D_CRT_SECURE_NO_WARNINGS -D_GLFW_WIN32 -D_UNICODE -IZ:/Projects/CPP/Vulfus/submodules/glfw/include -IZ:/Projects/CPP/Vulfus/submodules/glfw/src -IZ:/Projects/CPP/Vulfus/build/submodules/glfw/src -O0 -g -Xclang -gcodeview -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -std=c99 -Wall -o submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj -c Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\wgl_context.c",
+  "file": "Z:\\Projects\\CPP\\Vulfus\\submodules\\glfw\\src\\wgl_context.c",
+  "output": "submodules\\glfw\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj"
+}
+]

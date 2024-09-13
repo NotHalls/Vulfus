@@ -9,9 +9,9 @@ set(ProjectName Vulfus)
 project(${ProjectName})
 
 # setting the output directories
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin/${CMAKE_SYSTEM_NAME}-${CMAKE_BUILD_TYPE}")
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "./bin/objects/${CMAKE_SYSTEM_NAME}-${CMAKE_BUILD_TYPE}")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "./bin/${CMAKE_SYSTEM_NAME}-${CMAKE_BUILD_TYPE}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "./bin/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE}")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "./bin/objects/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE}")
 
 # now we set the c++ standards
 set(CXX_STANDARD 20)
@@ -36,9 +36,10 @@ endif()
 
 
 # now we add some build types
-# we set the build type to dev by def, but we can choose if we want the build type to be Release
+# we set the build type to debug by def, but we can choose if we want the build type to be Release
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Choose a build type" FORCE)
 if(NOT CMAKE_BUILD_TYPE)
-    set(CMAKE_BUILD_TYPE Development CACHE STRING "Choose a build type (Development | Release)" FORCE)
+    set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Choose a build type (Debug | Release)" FORCE)
 endif()
 
 

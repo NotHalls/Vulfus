@@ -1,3 +1,6 @@
 # these are the useless folders that git doesnt need
 ./.cache/*
+./.vs/*
+
+./out/*
 ./build/*

@@ -1,17 +1,17 @@
 cmake_minimum_required(VERSION 3.10)
 
-
 # variables
 set(ProjectName Vulfus)
 
 
+# setting the output directories
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin/${CMAKE_BUILD_TYPE}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "./bin/${CMAKE_BUILD_TYPE}")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "./bin/${CMAKE_BUILD_TYPE}")
+
+
 # creating the project
 project(${ProjectName})
-
-# setting the output directories
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE}")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "./bin/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE}")
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "./bin/objects/${CMAKE_SYSTEM_NAME}/${CMAKE_BUILD_TYPE}")
 
 # now we set the c++ standards
 set(CXX_STANDARD 20)
@@ -37,11 +37,10 @@ endif()
 
 # now we add some build types
 # we set the build type to debug by def, but we can choose if we want the build type to be Release
-set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Choose a build type" FORCE)
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRINGS "Choose a build type (Debug | Release)" FORCE)
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Choose a build type (Debug | Release)" FORCE)
 endif()
-
 
 
 # time to add the submodules
@@ -74,3 +73,6 @@ target_link_libraries(${ProjectName} PRIVATE ${Vulkan_LIBRARIES} glfw)
 
 # adding compile definitions
 target_compile_definitions(${ProjectName} PUBLIC GLFW_INCLUDE_VULKAN)
+
+target_compile_definitions(${ProjectName} PUBLIC $<$<CONFIG:Debug>:VF_DEBUG>)
+target_compile_definitions(${ProjectName} PUBLIC $<$<CONFIG:Release>:VF_RELEASE>)

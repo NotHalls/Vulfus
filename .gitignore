@@ -1,6 +1,19 @@
 # these are the useless folders that git doesnt need
-./.cache/*
-./.vs/*
+.cache
+.vs
+*.dir
 
-./out/*
-./build/*
+CMakeFiles/
+
+out
+build
+x64
+
+
+# files that we dont want
+*.vcxproj
+*.filters
+*.sln
+
+cmake_install.cmake
+CmakeCache.txt

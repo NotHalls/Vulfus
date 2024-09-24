@@ -2,23 +2,25 @@
     "configurations": [
         {
             "name": "Run With Debug",
-            "type": "lldb",
+            "type": "cppdbg",
             "request": "launch",
+            "externalConsole": true,
 
             "preLaunchTask":"Build",
             
             "cwd": "${workspaceFolder}",
-            "program": "build/bin/Debug/Vulfus.exe",
+            "program": "${workspaceFolder}/build/bin/Debug/Vulfus.exe",
         },
         {
             "name": "Run With Release",
-            "type": "lldb",
+            "type": "cppdbg",
             "request": "launch",
+            "externalConsole": true,
 
             "preLaunchTask": "Build",
             
-            "program": "build/bin/Release/Vulfus.exe",
-            "cwd": "${workspaceFolder}"
+            "cwd": "${workspaceFolder}",
+            "program": "${workspaceFolder}/build/bin/Release/Vulfus.exe",
         }
     ]
 }

@@ -7,11 +7,64 @@
 #include <imgui.h>
 
 #include <vector>
+#include <optional>
 
 
 
 class Application
 {
+private:
+    // Window Stuff //
+    const uint32_t WindowWidth = 1280;
+    const uint32_t WindowHeight = 720;
+    GLFWwindow* m_Window;
+
+
+
+    // Vulkan Main Properties //
+    VkInstance m_VkInstance = VK_NULL_HANDLE;
+    VkPhysicalDevice m_VkPhysicalDevice = VK_NULL_HANDLE;
+    VkDevice m_VkDevice = VK_NULL_HANDLE;
+
+    // Vulkan Queues
+    VkQueue m_GraphicsFamilyQueue;
+
+
+
+    // Vulkan Layers
+    const std::vector<const char*> m_VulkanValidationLayers {
+        "VK_LAYER_KHRONOS_validation"
+    };
+
+
+
+    // Vulkan Debugging Stuff //
+#ifdef VF_DEBUG
+    const bool m_enableValidationLayers = true;
+#elif VF_RELEASE
+    const bool m_enableValidationLayers = false;
+#endif
+    VkDebugUtilsMessengerEXT m_DebugMessenger;
+
+
+
+    // Vulkan Device Stuff //
+    VkPhysicalDeviceProperties m_PhysicalDeviceProperties;
+    VkPhysicalDeviceFeatures m_PhysicalDeviceFeatures;
+    struct QueueFamilyIndices
+    {
+        std::optional<uint32_t> graphicsFamily;
+
+        bool isComplete()
+        {
+            return graphicsFamily.has_value();
+        }
+    };
+
+
+
+
+
 public:
     void Run()
     {
@@ -25,35 +78,28 @@ private:
     {
         CreateVulkanInstance();
         SetupDebugger();
+        SetPhysicalDevice();
+        CreateLogicalDevice();
     }
     void InitWindow();
     void Gameloop();
     void CleanUp();
 
 
+
     void CreateVulkanInstance();
     void SetupDebugger();
+    void SetPhysicalDevice();
+    void CreateLogicalDevice();
 
-    bool checkValidationLayerSupport();
-    bool checkExtensionsSupport(const char* glfwExtensionNames);
-    void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& debugCreateInfo);
-    std::vector<const char*> getRequiredExtensions();
-
-
-private:
-    const uint32_t WindowWidth = 1280;
-    const uint32_t WindowHeight = 720;
-    GLFWwindow* m_Window;
     
-    VkInstance m_VkInstance;
-    const std::vector<const char*> vulkanValidationLayers {
-        "VK_LAYER_KHRONOS_validation"
-    };
-    #ifdef VF_DEBUG
-    const bool enableValidationLayers = true;
-    #elif VF_RELEASE
-    const bool enableValidationLayers = false;
-    #endif
-
-    VkDebugUtilsMessengerEXT m_DebugMessenger;
+    bool checkValidationLayerSupport();
+    void populateDebugMessengerCreateInfo(VkDebugUtilsMessengerCreateInfoEXT& debugCreateInfo);
+    
+    bool checkExtensionsSupport(const char* glfwExtensionNames);
+    std::vector<const char*> getRequiredExtensions();
+    
+    
+    bool isSuitablePhyDevice(VkPhysicalDevice phyDevice);
+    QueueFamilyIndices findQueueFamilies(VkPhysicalDevice phyDevice);
 };

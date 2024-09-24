@@ -1,11 +1,14 @@
 # these are the useless folders that git doesnt need
 .cache
 .vs
+.vscode
+.vscode
 *.dir
 
 CMakeFiles/
 
 out
+bin
 build
 x64
 
@@ -14,6 +17,9 @@ x64
 *.vcxproj
 *.filters
 *.sln
+*.user
+*.in
+*.cmake
 
 cmake_install.cmake
 CmakeCache.txt

@@ -4,18 +4,16 @@ cmake_minimum_required(VERSION 3.10)
 set(ProjectName Vulfus)
 
 
-# setting the output directories
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "./bin/${CMAKE_BUILD_TYPE}")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "./bin/${CMAKE_BUILD_TYPE}")
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "./bin/${CMAKE_BUILD_TYPE}")
-
+# setting the output dirs
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin/${CMAKE_SYSTEM_NAME}-${CMAKE_BUILD_TYPE}-${CMAKE_SYSTEM_PROCESSOR}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/lib/${CMAKE_SYSTEM_NAME}-${CMAKE_BUILD_TYPE}-${CMAKE_SYSTEM_PROCESSOR}")
 
 # creating the project
 project(${ProjectName})
 
 # now we set the c++ standards
-set(CXX_STANDARD 20)
-set(CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # this setting exports json file that helps the code editor's intellisence
 # basicly it will give the intellisence the sence to work corrently
@@ -37,7 +35,7 @@ endif()
 
 # now we add some build types
 # we set the build type to debug by def, but we can choose if we want the build type to be Release
-set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRINGS "Choose a build type (Debug | Release)" FORCE)
+set(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Choose a build type (Debug | Release)" FORCE)
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Choose a build type (Debug | Release)" FORCE)
 endif()

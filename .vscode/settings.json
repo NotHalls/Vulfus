@@ -1,6 +1,4 @@
-{
-    "C_Cpp.intelliSenseEngine": "Disabled",
-  
+{  
     "C_Cpp.default.intelliSenseMode": "clang-x64",
     "C_Cpp.default.compilerPath": "C:/Program Files/LLVM/bin/clang++",
     "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
@@ -12,11 +10,5 @@
         "compilerPath": "C:/Program Files/LLVM/bin/clang++", // Path to Clang compiler (adjust based on your installation)
         "compileCommands": "${workspaceFolder}/build/compile_commands.json" // Path to your compile_commands.json
       }
-    ],
-    
-    "cmake.configureSettings": {
-    "CMAKE_BUILD_TYPE": "Debug",
-    "CMAKE_CXX_COMPILER": "C:/Program Files/LLVM/bin/clang++",
-    "CMAKE_C_COMPILER": "C:/Program Files/LLVM/bin/clang"
-    } 
+    ]
   }

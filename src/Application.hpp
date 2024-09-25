@@ -1,10 +1,8 @@
 #pragma once
 
-// we are adding all the includes to make sure all of them are correctly set up
+
 #include "vulkan/vulkan_core.h"
 #include <GLFW/glfw3.h>
-#include <glm.hpp>
-#include <imgui.h>
 
 #include <vector>
 #include <optional>
@@ -26,8 +24,12 @@ private:
     VkPhysicalDevice m_VkPhysicalDevice = VK_NULL_HANDLE;
     VkDevice m_VkDevice = VK_NULL_HANDLE;
 
+    // Vulkan WSI Properties //
+    VkSurfaceKHR m_VkWindowSurface;
+
     // Vulkan Queues
     VkQueue m_GraphicsFamilyQueue;
+    VkQueue m_PresentationFamilyQueue;
 
 
 
@@ -54,10 +56,14 @@ private:
     struct QueueFamilyIndices
     {
         std::optional<uint32_t> graphicsFamily;
+        std::optional<uint32_t> presentationFamily;
 
         bool isComplete()
         {
-            return graphicsFamily.has_value();
+            return
+                graphicsFamily.has_value() &&
+                presentationFamily.has_value()
+            ;
         }
     };
 
@@ -78,6 +84,7 @@ private:
     {
         CreateVulkanInstance();
         SetupDebugger();
+        CreateWindowSurface();
         SetPhysicalDevice();
         CreateLogicalDevice();
     }
@@ -89,6 +96,7 @@ private:
 
     void CreateVulkanInstance();
     void SetupDebugger();
+    void CreateWindowSurface();
     void SetPhysicalDevice();
     void CreateLogicalDevice();
 
